@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" fill="#11100F"/>
+  <text x="32" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="600" fill="#F5F1EA" letter-spacing="1">LB</text>
+  <rect x="14" y="38" width="36" height="12" fill="#F5F1EA"/>
+  <text x="32" y="47" text-anchor="middle" font-family="Georgia, serif" font-size="6" font-weight="600" fill="#11100F" letter-spacing="1.5">LA BARCA</text>
+</svg>
