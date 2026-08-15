@@ -57,13 +57,13 @@ export function Proposals() {
                 }`}
               >
                 <div className="md:col-span-5">
-                  <p className="font-sans text-[10px] font-medium tracking-editorial text-champagne-dim uppercase">
+                  <p className="font-sans text-[10px] font-medium tracking-editorial text-champagne-deep uppercase">
                     {String(index + 1).padStart(2, "0")}
                   </p>
-                  <h3 className="mt-3 font-serif text-3xl text-charcoal md:text-4xl">
+                  <h3 className="mt-3 font-serif text-3xl text-ink md:text-4xl">
                     {item.title}
                   </h3>
-                  <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-stone-mid">
+                  <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-ink-muted">
                     {item.text}
                   </p>
                 </div>

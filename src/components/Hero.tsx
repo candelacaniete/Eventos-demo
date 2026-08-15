@@ -11,6 +11,8 @@ export function Hero() {
         <img
           src={images.hero}
           alt="Salón de eventos La Barca iluminado"
+          fetchPriority="high"
+          decoding="async"
           className="img-kenburns h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-charcoal/30" />
@@ -33,7 +35,7 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={2}>
-          <p className="mt-7 max-w-md text-[15px] leading-relaxed text-ivory/70 md:text-[16px]">
+          <p className="mt-7 max-w-md text-[15px] leading-relaxed text-beige/90 md:text-[16px]">
             Un espacio exclusivo en Pilar para celebrar, compartir y crear
             recuerdos que quedan.
           </p>
@@ -60,11 +62,11 @@ export function Hero() {
         </Reveal>
 
         <div className="mt-16 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-ivory/15 pt-6 md:mt-20">
-          <p className="font-sans text-[10px] font-medium tracking-editorial text-ivory/55 uppercase">
+          <p className="font-sans text-[10px] font-medium tracking-editorial text-beige/75 uppercase">
             Pilar · Buenos Aires
           </p>
           <span className="hidden h-px w-8 bg-champagne/40 sm:block" />
-          <p className="font-sans text-[10px] font-medium tracking-editorial text-ivory/55 uppercase">
+          <p className="font-sans text-[10px] font-medium tracking-editorial text-beige/75 uppercase">
             Eventos sociales & corporativos
           </p>
         </div>
