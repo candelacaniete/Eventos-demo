@@ -50,10 +50,10 @@ export function AvailabilityForm() {
                 "Recibí una propuesta a medida",
               ].map((item, i) => (
                 <div key={item} className="flex items-baseline gap-4">
-                  <span className="font-sans text-[10px] tracking-editorial text-champagne-dim uppercase">
+                  <span className="font-sans text-[10px] tracking-editorial text-champagne-deep uppercase">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="font-serif text-xl text-charcoal/80">{item}</span>
+                  <span className="font-serif text-xl text-ink">{item}</span>
                 </div>
               ))}
             </div>
@@ -63,7 +63,7 @@ export function AvailabilityForm() {
             <div className="border border-charcoal/10 bg-ivory px-6 py-8 md:px-10 md:py-12">
               {/* Progress */}
               <div className="mb-10 flex items-center justify-between gap-4">
-                <p className="font-sans text-[10px] font-medium tracking-editorial text-champagne-dim uppercase">
+                <p className="font-sans text-[10px] font-medium tracking-editorial text-champagne-deep uppercase">
                   Paso 0{step} — 04
                 </p>
                 <div className="flex flex-1 justify-end gap-1.5 sm:max-w-[180px]">
@@ -80,13 +80,13 @@ export function AvailabilityForm() {
 
               {submitted ? (
                 <div className="step-enter py-10 text-center">
-                  <p className="font-sans text-[10px] tracking-editorial text-champagne-dim uppercase">
+                  <p className="font-sans text-[10px] tracking-editorial text-champagne-deep uppercase">
                     Consulta recibida
                   </p>
                   <h3 className="mt-4 font-serif text-3xl text-charcoal md:text-4xl">
                     Gracias por confiar en nosotros.
                   </h3>
-                  <p className="mx-auto mt-5 max-w-md text-[15px] leading-relaxed text-stone-mid">
+                  <p className="mx-auto mt-5 max-w-md text-[15px] leading-relaxed text-ink-muted">
                     Te contactaremos para compartirte las propuestas disponibles
                     y acompañarte en la planificación.
                   </p>
@@ -145,11 +145,11 @@ export function AvailabilityForm() {
                       <h3 className="font-serif text-2xl text-charcoal md:text-3xl">
                         ¿Cuándo?
                       </h3>
-                      <p className="mt-3 text-[14px] text-stone-mid">
+                      <p className="mt-3 text-[14px] text-ink-muted">
                         Fecha estimada de tu celebración.
                       </p>
                       <label className="mt-8 block">
-                        <span className="font-sans text-[10px] font-medium tracking-editorial text-champagne-dim uppercase">
+                        <span className="font-sans text-[10px] font-medium tracking-editorial text-champagne-deep uppercase">
                           Fecha estimada
                         </span>
                         <input
@@ -164,7 +164,7 @@ export function AvailabilityForm() {
                         <button
                           type="button"
                           onClick={goBack}
-                          className="font-sans text-[11px] tracking-wide-label text-stone-mid uppercase transition-colors hover:text-charcoal"
+                          className="font-sans text-[11px] tracking-wide-label text-ink-muted uppercase transition-colors hover:text-charcoal"
                         >
                           ← Volver
                         </button>
@@ -185,11 +185,11 @@ export function AvailabilityForm() {
                       <h3 className="font-serif text-2xl text-charcoal md:text-3xl">
                         ¿Cuántas personas?
                       </h3>
-                      <p className="mt-3 text-[14px] text-stone-mid">
+                      <p className="mt-3 text-[14px] text-ink-muted">
                         Una estimación nos ayuda a pensarte mejor el espacio.
                       </p>
                       <label className="mt-8 block">
-                        <span className="font-sans text-[10px] font-medium tracking-editorial text-champagne-dim uppercase">
+                        <span className="font-sans text-[10px] font-medium tracking-editorial text-champagne-deep uppercase">
                           Cantidad aproximada de invitados
                         </span>
                         <input
@@ -206,7 +206,7 @@ export function AvailabilityForm() {
                         <button
                           type="button"
                           onClick={goBack}
-                          className="font-sans text-[11px] tracking-wide-label text-stone-mid uppercase transition-colors hover:text-charcoal"
+                          className="font-sans text-[11px] tracking-wide-label text-ink-muted uppercase transition-colors hover:text-charcoal"
                         >
                           ← Volver
                         </button>
@@ -227,14 +227,14 @@ export function AvailabilityForm() {
                       <h3 className="font-serif text-2xl text-charcoal md:text-3xl">
                         Contanos un poco más
                       </h3>
-                      <p className="mt-3 text-[14px] text-stone-mid">
+                      <p className="mt-3 text-[14px] text-ink-muted">
                         {eventType
                           ? `Estás planificando: ${eventType.toLowerCase()}.`
                           : "Dejanos tus datos para continuar."}
                       </p>
                       <div className="mt-8 space-y-6">
                         <label className="block">
-                          <span className="font-sans text-[10px] font-medium tracking-editorial text-champagne-dim uppercase">
+                          <span className="font-sans text-[10px] font-medium tracking-editorial text-champagne-deep uppercase">
                             Nombre
                           </span>
                           <input
@@ -246,7 +246,7 @@ export function AvailabilityForm() {
                           />
                         </label>
                         <label className="block">
-                          <span className="font-sans text-[10px] font-medium tracking-editorial text-champagne-dim uppercase">
+                          <span className="font-sans text-[10px] font-medium tracking-editorial text-champagne-deep uppercase">
                             WhatsApp
                           </span>
                           <input
@@ -258,7 +258,7 @@ export function AvailabilityForm() {
                           />
                         </label>
                         <label className="block">
-                          <span className="font-sans text-[10px] font-medium tracking-editorial text-champagne-dim uppercase">
+                          <span className="font-sans text-[10px] font-medium tracking-editorial text-champagne-deep uppercase">
                             Email
                           </span>
                           <input
@@ -274,7 +274,7 @@ export function AvailabilityForm() {
                         <button
                           type="button"
                           onClick={goBack}
-                          className="font-sans text-[11px] tracking-wide-label text-stone-mid uppercase transition-colors hover:text-charcoal"
+                          className="font-sans text-[11px] tracking-wide-label text-ink-muted uppercase transition-colors hover:text-charcoal"
                         >
                           ← Volver
                         </button>
@@ -285,7 +285,7 @@ export function AvailabilityForm() {
                           Consultar disponibilidad
                         </button>
                       </div>
-                      <p className="mt-8 text-center text-[13px] text-stone-mid/80 md:text-left">
+                      <p className="mt-8 text-center text-[13px] text-ink-muted md:text-left">
                         Te contactaremos para compartirte las propuestas
                         disponibles.
                       </p>

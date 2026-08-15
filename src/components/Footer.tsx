@@ -10,7 +10,7 @@ export function Footer() {
             <p className="mt-1 font-sans text-[10px] font-medium tracking-[0.35em] text-champagne uppercase">
               Eventos
             </p>
-            <p className="mt-6 font-sans text-[12px] tracking-wide-label text-beige/50 uppercase">
+            <p className="mt-6 font-sans text-[12px] tracking-wide-label text-beige/70 uppercase">
               Pilar · Buenos Aires
             </p>
           </div>
@@ -25,7 +25,7 @@ export function Footer() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-sans text-[11px] font-medium tracking-wide-label text-ivory/60 uppercase transition-colors hover:text-ivory"
+                className="font-sans text-[11px] font-medium tracking-wide-label text-ivory/75 uppercase transition-colors hover:text-ivory"
               >
                 {link.label}
               </a>
@@ -37,7 +37,7 @@ export function Footer() {
               href="https://instagram.com/labarcaeventosok"
               target="_blank"
               rel="noreferrer"
-              className="font-sans text-[11px] font-medium tracking-wide-label text-ivory/60 uppercase transition-colors hover:text-champagne"
+              className="font-sans text-[11px] font-medium tracking-wide-label text-ivory/75 uppercase transition-colors hover:text-champagne"
             >
               Instagram
             </a>
@@ -45,7 +45,7 @@ export function Footer() {
               href="https://wa.me/541141703713"
               target="_blank"
               rel="noreferrer"
-              className="font-sans text-[11px] font-medium tracking-wide-label text-ivory/60 uppercase transition-colors hover:text-champagne"
+              className="font-sans text-[11px] font-medium tracking-wide-label text-ivory/75 uppercase transition-colors hover:text-champagne"
             >
               WhatsApp
             </a>
@@ -53,10 +53,10 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-3 border-t border-ivory/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-sans text-[11px] text-beige/40">
+          <p className="font-sans text-[11px] text-beige/55">
             © 2026 La Barca Eventos
           </p>
-          <p className="font-sans text-[11px] text-beige/35">
+          <p className="font-sans text-[11px] text-beige/50">
             Demo visual · Presentación comercial
           </p>
         </div>

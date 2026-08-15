@@ -13,15 +13,16 @@ export function SectionHeading({
   light = false,
   align = "left",
 }: SectionHeadingProps) {
-  const muted = light ? "text-beige/80" : "text-beige/70";
-  const titleColor = light ? "text-charcoal" : "text-ivory";
+  const label = light ? "text-champagne-deep" : "text-champagne";
+  const titleColor = light ? "text-ink" : "text-ivory";
+  const body = light ? "text-ink-muted" : "text-beige/85";
   const alignClass = align === "center" ? "text-center mx-auto" : "text-left";
 
   return (
     <div className={`max-w-2xl ${alignClass}`}>
       {number && (
         <p
-          className={`mb-5 font-sans text-[11px] font-medium tracking-editorial uppercase ${muted}`}
+          className={`mb-5 font-sans text-[11px] font-medium tracking-editorial uppercase ${label}`}
         >
           {number}
         </p>
@@ -33,7 +34,7 @@ export function SectionHeading({
       </h2>
       {description && (
         <p
-          className={`mt-6 max-w-xl text-[15px] leading-relaxed ${muted} ${align === "center" ? "mx-auto" : ""}`}
+          className={`mt-6 max-w-xl text-[15px] leading-relaxed ${body} ${align === "center" ? "mx-auto" : ""}`}
         >
           {description}
         </p>

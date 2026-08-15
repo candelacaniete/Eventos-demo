@@ -4,9 +4,16 @@ type RevealProps = {
   children: ReactNode;
   className?: string;
   delay?: 0 | 1 | 2 | 3;
+  /** Fade-only variant — safer for full-bleed stacked panels */
+  variant?: "default" | "fade";
 };
 
-export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
+export function Reveal({
+  children,
+  className = "",
+  delay = 0,
+  variant = "default",
+}: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -20,7 +27,7 @@ export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
           observer.unobserve(el);
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+      { threshold: 0.08, rootMargin: "0px 0px -8% 0px" },
     );
 
     observer.observe(el);
@@ -36,8 +43,10 @@ export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
           ? "reveal-delay-3"
           : "";
 
+  const base = variant === "fade" ? "reveal-fade" : "reveal";
+
   return (
-    <div ref={ref} className={`reveal ${delayClass} ${className}`.trim()}>
+    <div ref={ref} className={`${base} ${delayClass} ${className}`.trim()}>
       {children}
     </div>
   );

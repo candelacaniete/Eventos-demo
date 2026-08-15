@@ -39,7 +39,7 @@ export function FinalCTA() {
               <p className="font-sans text-[10px] tracking-editorial text-champagne uppercase">
                 Dirección
               </p>
-              <p className="mt-3 font-serif text-xl text-ivory/90">
+              <p className="mt-3 font-serif text-xl text-ivory">
                 Guillermo Rawson 46
                 <br />
                 Pilar, Buenos Aires
@@ -49,7 +49,7 @@ export function FinalCTA() {
               <p className="font-sans text-[10px] tracking-editorial text-champagne uppercase">
                 WhatsApp
               </p>
-              <p className="mt-3 font-serif text-xl text-ivory/90">
+              <p className="mt-3 font-serif text-xl text-ivory">
                 <a
                   href="https://wa.me/541141703713"
                   className="transition-colors hover:text-champagne"
@@ -69,7 +69,7 @@ export function FinalCTA() {
               <p className="font-sans text-[10px] tracking-editorial text-champagne uppercase">
                 Instagram
               </p>
-              <p className="mt-3 font-serif text-xl text-ivory/90">
+              <p className="mt-3 font-serif text-xl text-ivory">
                 <a
                   href="https://instagram.com/labarcaeventosok"
                   target="_blank"
